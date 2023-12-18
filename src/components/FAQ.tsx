@@ -42,7 +42,7 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <div className='mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8'>
+    <section className='mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8'>
       <h2 className='text-2xl font-bold leading-10 tracking-tight text-gray-900'>
         Preguntas frecuentes
       </h2>
@@ -71,6 +71,6 @@ export default function FAQ() {
           ))}
         </dl>
       </div>
-    </div>
+    </section>
   )
 }

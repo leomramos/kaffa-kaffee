@@ -114,7 +114,7 @@ export default function Product() {
       </div>
 
       {/* Product image */}
-      <div className='sticky top-0 mt-10 lg:col-start-2 lg:row-span-2 lg:mt-0 lg:self-center'>
+      <div className='lg:sticky lg:top-0 mt-10 lg:col-start-2 lg:row-span-2 lg:mt-0 lg:self-center'>
         <div className='aspect-h-1 aspect-w-1 overflow-hidden rounded-lg'>
           <img
             src='/kaffa-koffee.jpg'
@@ -134,7 +134,11 @@ export default function Product() {
           <form className='space-y-4'>
             <div className='sm:flex sm:justify-between'>
               {/* Flavor selector */}
-              <RadioGroup value={selectedFlavor} onChange={setSelectedFlavor}>
+              <RadioGroup
+                value={selectedFlavor}
+                onChange={setSelectedFlavor}
+                className='w-full'
+              >
                 <RadioGroup.Label className='block text-sm font-medium text-gray-700'>
                   Sabor
                 </RadioGroup.Label>
@@ -184,7 +188,11 @@ export default function Product() {
             </div>
             <div className='sm:flex sm:justify-between'>
               {/* Size selector */}
-              <RadioGroup value={selectedSize} onChange={setSelectedSize}>
+              <RadioGroup
+                value={selectedSize}
+                onChange={setSelectedSize}
+                className='w-full'
+              >
                 <RadioGroup.Label className='block text-sm font-medium text-gray-700'>
                   Tamaño
                 </RadioGroup.Label>
@@ -234,7 +242,11 @@ export default function Product() {
             </div>
             <div className='sm:flex sm:justify-between'>
               {/* Type selector */}
-              <RadioGroup value={selectedType} onChange={setSelectedType}>
+              <RadioGroup
+                value={selectedType}
+                onChange={setSelectedType}
+                className='w-full'
+              >
                 <RadioGroup.Label className='block text-sm font-medium text-gray-700'>
                   Presentación
                 </RadioGroup.Label>

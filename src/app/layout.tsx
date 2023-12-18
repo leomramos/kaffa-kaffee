@@ -23,9 +23,11 @@ export default function RootLayout({
           <Navbar />
           {children}
         </div>
-        <Product />
-        <FAQ />
-        <Contact />
+        <div className='px-4 sm:px-12 lg:px-24 overflow-hidden'>
+          <Product />
+          <FAQ />
+          <Contact />
+        </div>
         <Footer />
       </body>
     </html>

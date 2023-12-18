@@ -2,12 +2,12 @@ import Link from 'next/link'
 
 export default function Logos() {
   return (
-    <div className='py-24 sm:py-32'>
+    <section className='py-24 sm:py-32'>
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
         <div className='grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2'>
           <div className='mx-auto w-full max-w-xl lg:mx-0'>
             <h2 className='text-3xl font-bold tracking-tight text-gray-900'>
-              Trusted by the most innovative teams
+              Contamos con el apoyo de grandes compañías
             </h2>
             <p className='mt-6 text-lg leading-8 text-gray-600'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
@@ -72,6 +72,6 @@ export default function Logos() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
