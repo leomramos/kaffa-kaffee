@@ -10,19 +10,19 @@ export default function Logos() {
               Contamos con el apoyo de grandes compañías
             </h2>
             <p className='mt-6 text-lg leading-8 text-gray-600'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
-              egestas tempus tellus etiam sed. Quam a scelerisque amet
-              ullamcorper eu enim et fermentum, augue.
+              Con más de 15 años ofreciendo nuestros servicios, tenemos el
+              orgullo de contar con la confianza de diversas empresas conocidas
+              a nivel nacional e internacional.
             </p>
             <div className='mt-8 flex items-center gap-x-6'>
               <Link
-                href='#'
+                href='#product'
                 className='rounded-md bg-primary-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500'
               >
-                Create account
+                Compra ahora
               </Link>
-              <a href='#' className='text-sm font-semibold text-gray-900'>
-                Contact us <span aria-hidden='true'>&rarr;</span>
+              <a href='#contact' className='text-sm font-semibold text-gray-900'>
+                Entra en contacto
               </a>
             </div>
           </div>

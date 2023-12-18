@@ -1,7 +1,11 @@
 'use client'
 
 import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import {
+  Bars3Icon,
+  ShoppingBagIcon,
+  XMarkIcon,
+} from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import { useState } from 'react'
 
@@ -52,7 +56,7 @@ export default function Navbar() {
             href='#'
             className='text-sm font-semibold leading-6 text-gray-900'
           >
-            Log in <span aria-hidden='true'>&rarr;</span>
+            <ShoppingBagIcon className='h-6 w-6' aria-hidden='true' />
           </Link>
         </div>
       </nav>
@@ -85,6 +89,7 @@ export default function Navbar() {
                   <Link
                     key={item.name}
                     href={item.href}
+                    onClick={() => setMobileMenuOpen(false)}
                     className='-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
                   >
                     {item.name}
@@ -96,7 +101,7 @@ export default function Navbar() {
                   href='#'
                   className='-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
                 >
-                  Log in
+                  Carrito
                 </Link>
               </div>
             </div>
