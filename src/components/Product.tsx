@@ -48,7 +48,7 @@ const types = [
 
 const reviews = { average: 4, totalCount: 1624 }
 
-function classNames(...classes) {
+function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(' ')
 }
 
