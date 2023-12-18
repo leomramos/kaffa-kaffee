@@ -39,7 +39,7 @@ const sizes = [
 ]
 
 const types = [
-  { name: 'Molido', tip: 'Práctico de preparación rápida.' },
+  { name: 'Molido', tip: 'Práctico para una preparación rápida.' },
   {
     name: 'En grano',
     tip: 'Sabor penetrante. Es necesário un molinillo.',
