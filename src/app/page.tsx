@@ -1,4 +1,4 @@
-import { Features, Hero, Logos, Testimonials } from '#/components'
+import { Features, Hero, Logos, Testimonials } from '#/widgets'
 
 export default function Home() {
   return (
