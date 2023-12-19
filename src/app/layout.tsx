@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='es' className='scroll-smooth'>
-      <body className={`${inter.className} min-h-screen`}>
+      <body className={inter.className}>
         <div>
           {/* <Banner /> */}
           <Navbar />
