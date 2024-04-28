@@ -24,7 +24,7 @@ export default function Navbar() {
       >
         <div className='flex lg:flex-1'>
           <Link href='/' className='-m-1.5 p-1.5'>
-            <span className='sr-only'>Your Company</span>
+            <span className='sr-only'>K´affa Kaffeé</span>
             <Image
               width={32}
               height={32}
@@ -61,6 +61,7 @@ export default function Navbar() {
             target='_blank'
             rel='noreferrer'
             className='text-sm font-semibold leading-6 text-gray-900'
+            title='WhatsApp'
           >
             <BsWhatsapp className='h-6 w-6' aria-hidden='true' />
           </a>
@@ -76,8 +77,8 @@ export default function Navbar() {
         <Dialog.Panel className='fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
           <div className='flex items-center justify-between'>
             <Link href='/' className='-m-1.5 p-1.5'>
-              <span className='sr-only'>Your Company</span>
-              <img className='h-8 w-auto' src='/logo.svg' alt='' />
+              <span className='sr-only'>K´affa Kaffeé</span>
+              <Image className='h-8 w-auto' src='/logo.svg' alt='' />
             </Link>
             <button
               type='button'

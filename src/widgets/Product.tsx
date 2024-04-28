@@ -1,9 +1,9 @@
 'use client'
 
 import { RadioGroup } from '@headlessui/react'
-import { QuestionMarkCircleIcon, StarIcon } from '@heroicons/react/20/solid'
+import { StarIcon } from '@heroicons/react/20/solid'
 import { GlobeAsiaAustraliaIcon } from '@heroicons/react/24/outline'
-import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 
 const flavors = [
@@ -130,10 +130,12 @@ export default function Product() {
       {/* Product image */}
       <div className='lg:sticky lg:top-0 mt-10 lg:col-start-2 lg:row-span-2 lg:mt-0 lg:self-center'>
         <div className='aspect-h-1 aspect-w-1 overflow-hidden rounded-lg'>
-          <img
+          <Image
             src='/kaffa-koffee.jpg'
-            alt='K´affa Kaffeé'
+            alt='Nuestro café'
             className='mx-auto h-full w-auto object-contain object-center rounded-3xl'
+            width={456}
+            height={592}
           />
         </div>
       </div>
@@ -174,6 +176,7 @@ export default function Product() {
                           <RadioGroup.Label
                             as='p'
                             className='text-base font-medium text-gray-900'
+                            role='radio'
                           >
                             {flavor.name}
                           </RadioGroup.Label>
