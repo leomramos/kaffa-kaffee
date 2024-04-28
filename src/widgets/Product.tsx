@@ -176,7 +176,6 @@ export default function Product() {
                           <RadioGroup.Label
                             as='p'
                             className='text-base font-medium text-gray-900'
-                            role='radio'
                           >
                             {flavor.name}
                           </RadioGroup.Label>
