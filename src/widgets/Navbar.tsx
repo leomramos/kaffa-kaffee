@@ -104,12 +104,14 @@ export default function Navbar() {
                 ))}
               </div>
               <div className='py-6'>
-                <Link
-                  href='#'
+                <a
+                  href='https://wa.me/51940724302'
                   className='-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50'
+                  target='_blank'
+                  rel='noreferrer'
                 >
-                  Carrito
-                </Link>
+                  WhatsApp
+                </a>
               </div>
             </div>
           </div>
