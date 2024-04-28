@@ -34,8 +34,8 @@ const flavors = [
 ]
 
 const sizes = [
-  { name: '250g', tip: 'Ideal para nuestro cafecito diario.' },
-  { name: '1kg', tip: 'Cantidad perfecta para la familia.' },
+  { name: '250 g', tip: 'Ideal para nuestro cafecito diario.' },
+  { name: '1 kg', tip: 'Cantidad perfecta para la familia.' },
 ]
 
 const types = [
@@ -88,7 +88,9 @@ export default function Product() {
           </h2>
 
           <div className='flex items-center'>
-            <p className='text-lg text-gray-900 sm:text-xl'>27,60 PEN</p>
+            <p className='text-lg text-gray-900 sm:text-xl'>
+              {27.6 * (selectedSize.name === '1 kg' ? 3.75 : 1)} PEN
+            </p>
 
             <div className='ml-4 border-l border-gray-300 pl-4'>
               <h2 className='sr-only'>Reviews</h2>
@@ -130,7 +132,7 @@ export default function Product() {
         <div className='aspect-h-1 aspect-w-1 overflow-hidden rounded-lg'>
           <img
             src='/kaffa-koffee.jpg'
-            alt=''
+            alt='K´affa Kaffeé'
             className='mx-auto h-full w-auto object-contain object-center rounded-3xl'
           />
         </div>
@@ -306,7 +308,7 @@ export default function Product() {
                 </div>
               </RadioGroup>
             </div>
-            <Link
+            {/* <Link
               href='#'
               className='group inline-flex text-sm text-gray-500 hover:text-gray-700'
             >
@@ -315,14 +317,16 @@ export default function Product() {
                 className='ml-2 h-5 w-5 flex-shrink-0 text-gray-400 group-hover:text-gray-500'
                 aria-hidden='true'
               />
-            </Link>
+            </Link> */}
             <div className='mt-10'>
-              <button
-                type='submit'
+              <a
+                href={`https://wa.me/51940724302?text=¡Hola! Me interesaría comprar el café ${selectedFlavor.name} - ${selectedType.name} (${selectedSize.name}). ¿Me podría brindar más información?`}
+                target='_blank'
+                rel='noreferrer'
                 className='flex w-full items-center justify-center rounded-md border border-transparent bg-primary-500 px-8 py-3 text-base font-medium text-white hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:ring-offset-gray-50'
               >
-                Añadir al carrito
-              </button>
+                Comprar por WhatsApp
+              </a>
             </div>
             <div className='mt-6 text-center'>
               <a

@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 const faqs = [
   {
     id: 1,
@@ -61,12 +59,12 @@ export default function FAQ() {
       <p className='mt-6 max-w-2xl text-base leading-7 text-gray-600'>
         ¿Tienes una consulta diferente y no encuentras la respuesta que buscas?
         Ponte en contacto con nosotros{' '}
-        <Link
-          href='#'
+        <a
+          href='mailto:pedidos@gustitos.pe'
           className='font-semibold text-primary-500 hover:text-primary-400'
         >
           enviándonos un correo electrónico,
-        </Link>{' '}
+        </a>{' '}
         y nos pondremos en contacto contigo tan pronto como sea posible.
       </p>
       <div className='mt-20'>

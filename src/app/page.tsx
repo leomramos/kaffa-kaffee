@@ -6,7 +6,7 @@ export default function Home() {
       <Hero />
       <Features />
       <Testimonials />
-      <Logos />
+      {/* <Logos /> */}
     </div>
   )
 }

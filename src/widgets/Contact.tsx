@@ -31,12 +31,14 @@ export default function Contact() {
               formar parte de nuestra comunidad cafetera! 🌟
             </p>
             <div className='mt-10 flex'>
-              <Link
-                href='#'
+              <a
+                href='https://wa.me/51940724302'
+                target='_blank'
+                rel='noreferrer'
                 className='rounded-md bg-primary-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500'
               >
                 Entra en contacto <span aria-hidden='true'>&rarr;</span>
-              </Link>
+              </a>
             </div>
           </div>
           <div className='flex flex-wrap max-w-2xl items-start justify-end gap-6 sm:gap-8 lg:contents'>

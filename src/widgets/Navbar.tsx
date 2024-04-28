@@ -1,13 +1,11 @@
 'use client'
 
 import { Dialog } from '@headlessui/react'
-import {
-  Bars3Icon,
-  ShoppingBagIcon,
-  XMarkIcon,
-} from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
+import { BsWhatsapp } from 'react-icons/bs'
 
 const navigation = [
   { name: 'Sobre', href: '#about' },
@@ -27,7 +25,13 @@ export default function Navbar() {
         <div className='flex lg:flex-1'>
           <Link href='/' className='-m-1.5 p-1.5'>
             <span className='sr-only'>Your Company</span>
-            <img className='h-8 w-auto' src='/logo.svg' alt='' />
+            <Image
+              width={32}
+              height={32}
+              className='h-8 w-auto'
+              src='/logo.svg'
+              alt='K´affa Kaffeé'
+            />
           </Link>
         </div>
         <div className='flex lg:hidden'>
@@ -52,12 +56,14 @@ export default function Navbar() {
           ))}
         </div>
         <div className='hidden lg:flex lg:flex-1 lg:justify-end'>
-          <Link
-            href='#'
+          <a
+            href='https://wa.me/51940724302'
+            target='_blank'
+            rel='noreferrer'
             className='text-sm font-semibold leading-6 text-gray-900'
           >
-            <ShoppingBagIcon className='h-6 w-6' aria-hidden='true' />
-          </Link>
+            <BsWhatsapp className='h-6 w-6' aria-hidden='true' />
+          </a>
         </div>
       </nav>
       <Dialog
